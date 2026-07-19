@@ -77,6 +77,26 @@ sem alterações.
 Basta abrir `index.html`, localizar os textos entre colchetes
 `[PREENCHER: ...]` e substituí-los pelo conteúdo definitivo.
 
+## Vídeo do Hero
+
+O Hero já está preparado para exibir um vídeo em loop, mudo e automático
+(estilo Reels), no lugar da foto do Dr. Cleverson:
+
+```
+site/
+└── video/
+    └── hero.mp4   ← adicionar este arquivo
+```
+
+- Formato recomendado: **MP4 (H.264)**, sem áudio ou com áudio (é
+  silenciado via `muted` de qualquer forma), curto (5–15s), leve (idealmente
+  abaixo de 8–10MB para carregar rápido).
+- Enquanto o arquivo `video/hero.mp4` não existir, o site continua
+  funcionando normalmente: o navegador exibe a foto `img/dr-cleverson-apresentacao.png`
+  como imagem de fallback.
+- Basta colocar o arquivo do vídeo em `video/hero.mp4` (mesmo nome) que ele
+  passa a tocar automaticamente — não é necessário alterar o HTML.
+
 ## Personalização rápida
 
 - **Número do WhatsApp**: já configurado em todos os botões como

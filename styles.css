@@ -217,7 +217,9 @@ a:focus-visible, button:focus-visible{
   transform:rotate(1.2deg);
   border:6px solid rgba(255,255,255,0.06);
 }
-.hero__media img{ width:100%; height:100%; object-fit:cover; }
+.hero__media img,
+.hero__media video{ width:100%; height:100%; object-fit:cover; display:block; }
+.hero__video{ aspect-ratio:424 / 517; background:var(--teal-900); }
 
 /* =========================================================
    SECTIONS (generic)
